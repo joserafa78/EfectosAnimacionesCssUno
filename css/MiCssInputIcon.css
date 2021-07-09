@@ -1,0 +1,54 @@
+/*Iconos en Formulario*/
+/*ling: https://www.youtube.com/watch?v=rWjntaq4FW4 */
+.container-Icon{
+    width: 85%;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.container-Icon input[type=text] {
+    width: 80%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 3s;
+
+}
+
+.container-Icon input[type=text]:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.container-Icon .inputWithIcon input[type=text] {
+    padding-left: 40px;
+}
+
+.container-Icon .inputWithIcon {
+    position: relative;
+}
+
+.container-Icon .inputWithIcon i {
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: 3s;
+}
+
+.container-Icon .inputWithIcon input[type=text] + i {
+    color: dodgerblue;
+}
+.container-Icon .inputIconBg i {
+    background-color:#93a9f0;
+    color: red;
+    padding: 12px 4px;
+    border-radius: 4px 0 0 4px;
+    margin-top:1px ;
+    height: 71%;
+}
