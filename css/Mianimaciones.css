@@ -1,0 +1,72 @@
+.banner{
+    width: 80%;
+    height: 300px;
+    border: 3px solid #a09b9b;
+    border-radius: 5px;
+    margin: auto;
+    background-image: url(../img/foto1.jpg);
+    background-size: 100% 100%;
+    /*Forma larga*/
+    animation: banner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /*Forma Corta*/
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+
+}
+/*Establece las Paradas que va a tener la Animacion*/
+@keyframes banner{
+    0%, 30%{
+        background-image: url(../img/foto1.jpg);
+        opacity: 1;
+    } 
+    31%,34%{ opacity: 0.1;}
+    35%, 65%{
+        background-image: url(../img/foto2.jpg);
+        opacity: 1;
+    }
+    66%,39%{ opacity: 0.1;}
+    70%, 95%{
+        background-image: url(../img/foto3.jpg);
+        opacity: 1;
+    }
+    96%,100%{ opacity: 0.1;}
+}
+
+/*------------------------TEXTO ANIMADO----------------------*/
+.contenedor-text{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    color: white;
+    border: 2px solid rgb(226, 223, 17);
+    border-radius: 5px;
+    font-size: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.contenedor-text ul{
+    list-style: none;
+    padding-left: 10px;
+    animation: cambia-texto 6s infinite;
+
+}
+.contenedor-text ul, p{
+    margin: 0px;
+}
+@keyframes cambia-texto {
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+
+     25%{margin-top: -40px;}
+    50%{margin-top: -40px;}
+
+    55%{margin-top: -80px;}
+    80%{margin-top: -80px;}
+
+    85%{margin-top: -40px;}
+    90%{margin-top: -40px;}
+
+    100%{margin-top: 0;}
+}

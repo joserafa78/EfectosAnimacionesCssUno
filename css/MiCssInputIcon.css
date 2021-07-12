@@ -46,9 +46,67 @@
 }
 .container-Icon .inputIconBg i {
     background-color:#93a9f0;
-    color: red;
+    color: #fff;
     padding: 12px 4px;
     border-radius: 4px 0 0 4px;
     margin-top:1px ;
     height: 71%;
+}
+
+/*-------ANIMATED CON KEYFRAMES DE TEXTO*/
+.textoAnimado h5{
+    font: bold 23px arial;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
+.textoAnimado H5:nth-child(1):hover{
+    color: #7f52e9;
+    animation: flash; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(2):hover{
+    color: #3e10a8;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(3):hover{
+    color: #3e10a8;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(4):hover{
+    color: #3e10a8;
+    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(5):hover{
+    color: #3e10a8;
+    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(6):hover{
+    color: #3e10a8;
+    animation: headShake; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(7):hover{
+    color: #3e10a8;
+    animation: swing; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(8):hover{
+    color: #3e10a8;
+    animation: tada; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(9):hover{
+    color: #3e10a8;
+    animation: wobble; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.textoAnimado H5:nth-child(10):hover{
+    color: #3e10a8;
+    animation: jello; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }

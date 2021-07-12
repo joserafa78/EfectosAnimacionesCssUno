@@ -20,11 +20,16 @@ body{
     font-family: sans-serif;
 }
 
+
 .section1{
     margin-top: 10px;
     height: 450px;
     background: var(--color-nav );
     border: 1px solid black;
+}
+header p:hover {
+    animation: bounce; 
+    animation-duration: 2s; 
 }
 @font-face {
     font-family:Mifuente1;
