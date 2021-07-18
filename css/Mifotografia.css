@@ -71,3 +71,102 @@ position: relative;
     /*clip-path: polygon(0 0, 100% 0, 0 100%);*/
 
 }
+/*----------------------------IMAGEN CON FILTOS--------------------------*/
+.contenedor-filtro{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.caja{
+    background: #faf9f9;
+    width: 35%;
+    height: auto; 
+}
+.img-container{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    position: relative;   
+}
+/*FILTRO*/
+.img-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2; /*Super Poner por encima de la imagen.*/
+}
+.img-responsive{
+    width: 100%;
+    height: auto;
+    z-index: 1;/*para que la imangen este debajo del filtro Before*/
+}
+.filtro-1:before{
+    background-image: radial-gradient(yellow,yellow);
+    opacity: 0.33;
+}
+.filtro-2::before{
+    background-image: radial-gradient(blue,blue);
+    opacity: 0.33;
+}
+.filtro-3::before{
+    background-image: linear-gradient(45deg,red,red);
+    opacity: 0.53;
+}
+/*------------------------IMAGEN DE FONDO CON FILTRO---------------------------------*/
+.contenido-fondo{
+    background-image: url(../img/nature.jpg); /*Lamo a ala imagen*/
+    width: 100%;
+    height: 410px;/*630px*/
+    background-size: contain; /*Para que la Img se expanda a todo el area disponible*/
+    position: relative;
+    display: flex; /*Se hace Flexible los elementos hijos*/
+    flex-direction: column;/*Para que se vuelva Columna*/
+    justify-content: center;/*Para centrar todo su contenido */
+    align-items: center;/*Para centrar de forma horizontal*/
+}
+/*Añade Capa Transparente*/
+.contenido-fondo::before{
+    content: ""; /*Añae Contenido Vacio*/
+    width: 100%;
+    height: 100%;
+    position: absolute;/*Agrega un Posicion*/
+    background-color: black;
+    opacity: 0.75;
+}
+/*Traer el Texto Al frente*/
+.contenido-fondo h1,h4,h3{
+    position: relative;
+    /*z-index: 1; Esta es una opciont Tambien*/
+    }
+.contenido-fondo h1{
+    font-size: 60px;
+    font-family:inherit;
+    text-align: center;
+    color: white;
+   
+    }
+.contenido-fondo h4{
+    font-size: 25px;
+    font-family:inherit;
+    color: white;
+    width: 60%;
+    text-align: center;/*Para Centrar*/
+    
+    }
+.contenido-fondo h3{
+    font-size: 20px;
+    font-family:inherit;
+    color: white;
+    width: 60%;
+    text-align: center;/*Para Centrar*/
+    }
+.contenido-fondo h3 a:visited {
+    color: white;
+}

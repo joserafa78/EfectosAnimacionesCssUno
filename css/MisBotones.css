@@ -1,0 +1,74 @@
+.boton{
+    position: relative;/*Agrega un Posicion*/
+    background: #7f8c8d;
+    color: #fff;
+    display: inline-block;/*Se pone uno al alado del otro*/
+    font-size: 1.25em;
+    margin: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    text-decoration:none;/*Quita el Subrayado*/
+    box-shadow: 0px 3px 0px #373c3c;
+}
+.btn-Ray{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0px 3px 0px #373c3c;
+}
+.btn-verde{
+   color:white;
+   background-color: green;
+}
+.btn-verde:hover{
+    background-color: #37b839;  /*Oscurece el Boton*/
+    text-decoration: none;
+   
+}
+.btn-verde:active{
+    background-color:#29962a ; /*Mas Oscuro el Boton*/
+    box-shadow: 0px 0px 0px;
+}
+.boton i{
+    margin-right: 10px;
+}
+/*Colores*/
+.boton.azul{
+    background: #3498db;
+    box-shadow: 0px 3px 0px #233792;
+}
+.boton.naranja{
+    background: #f37a41;
+    box-shadow: 0px 3px 0px hsl(27, 83%, 26%);
+}
+.boton.verde{
+    background: #10e260;
+    box-shadow: 0px 3px 0px #075a23;
+}
+/*tamaños*/
+.boton.pequeño{
+    width: 20%;
+}
+.boton.largo{
+    width: 40%;
+}
+.boton.mini{
+    width: 10%;
+}
+/*Bordes*/
+.boton.radio{
+    border-radius: 50px;
+}
+.boton:active{
+    box-shadow: 0px 0px 0px;
+    padding: 7px;
+    text-decoration: none;
+}
+.boton:hover {/*Este efecto va al final del Css*/
+    text-decoration: none;
+    opacity: 0.75;
+
+}
